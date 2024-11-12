@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploradores de la Isla Misteriosa - Reglamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        ol {
+            margin-left: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exploradores de la Isla Misteriosa</h1>
+    </header>
+
+    <div class="container">
+        <h2>Objetivo del Juego</h2>
+        <p>
+            El objetivo del juego es ser el primero en encontrar el tesoro escondido en la isla misteriosa y regresar al punto de inicio. Durante el viaje, los jugadores deben superar obstáculos y enfrentarse a criaturas utilizando estrategias basadas en trigonometría para resolver acertijos y atacar.
+        </p>
+
+        <h2>Cómo Jugar</h2>
+        <ol>
+            <li>
+                <h3>Preparación</h3>
+                <p>
+                    Cada jugador elige un explorador y recibe sus herramientas iniciales (como una brújula o cuerda). El tablero se arma colocando hexágonos aleatorios para formar la isla, y cada hexágono recibe un número de altura al azar que indica el tipo de terreno. Los jugadores se colocan en un punto de inicio y las criaturas y obstáculos se distribuyen aleatoriamente en el tablero.
+                </p>
+            </li>
+
+            <li>
+                <h3>Turnos</h3>
+                <p>
+                    En cada turno, el jugador lanza un dado para determinar el número de hexágonos que puede mover. Los jugadores pueden moverse en línea recta o en diagonal, pero deben respetar la diferencia de altura entre hexágonos (solo pueden escalar hasta 3 unidades de altura sin usar una cuerda). Si un jugador entra en un hexágono con una criatura o un obstáculo, debe resolver la situación antes de continuar.
+                </p>
+            </li>
+
+            <li>
+                <h3>Resolución de Obstáculos</h3>
+                <p>
+                    Algunos hexágonos contienen obstáculos que deben ser superados:
+                    <ul>
+                        <li><strong>Ríos</strong>: Se requiere una cuerda para cruzar.</li>
+                        <li><strong>Montañas</strong>: Solo se puede escalar si la diferencia de altura no es mayor a 3 unidades o si el jugador tiene una cuerda.</li>
+                        <li><strong>Niebla</strong>: Se necesita una brújula para poder moverse correctamente.</li>
+                    </ul>
+                </p>
+            </li>
+
+            <li>
+                <h3>Sistema de Combate</h3>
+                <p>
+                    Cuando un jugador encuentra una criatura en su camino, puede intentar atacarla utilizando un sistema basado en trigonometría:
+                    <ol>
+                        <li><strong>Selecciona una Carta de Ángulo de Ataque</strong>: Los jugadores eligen una carta con un ángulo predefinido (por ejemplo, 30°, 45°, 60° o 90°).</li>
+                        <li><strong>Consulta la Tabla de Alcance y Éxito de Ataque</strong>: La tabla muestra el alcance permitido para cada ángulo y la diferencia de altura entre hexágonos. Por ejemplo:
+                            <ul>
+                                <li>Un ángulo de 45° y una diferencia de altura de 2 unidades permiten un alcance de hasta 4 hexágonos.</li>
+                                <li>Un ángulo de 90° no tiene restricción de altura, pero tiene un alcance máximo de 2 hexágonos.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Comprobar el Alcance</strong>: Si la criatura está dentro del alcance permitido por la carta y la tabla, el ataque tiene éxito. Si no, el jugador debe esperar hasta su próximo turno.</li>
+                    </ol>
+                </p>
+
+                <h4>Tabla de Ángulos de Ataque</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ángulo</th>
+                            <th>Diferencia de Altura (unidades)</th>
+                            <th>Alcance (hexágonos)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>30°</td>
+                            <td>1</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>30°</td>
+                            <td>2</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>45°</td>
+                            <td>1</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>45°</td>
+                            <td>2</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>60°</td>
+                            <td>1</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>60°</td>
+                            <td>2</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>90°</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>90°</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>Ejemplo de Ataque:</strong></p>
+                <p>
+                    <strong>Posición del jugador:</strong> Hexágono de altura 4.<br>
+                    <strong>Posición de la criatura:</strong> Hexágono de altura 2, a 3 hexágonos de distancia.<br>
+                    <strong>Carta de ángulo:</strong> 45°.<br>
+                    <strong>Consulta de la tabla:</strong> Un ángulo de 45° con una diferencia de altura de 2 permite un alcance de hasta 5 hexágonos.<br>
+                    <strong>Resultado:</strong> El ataque tiene éxito, ya que la criatura está a 3 hexágonos de distancia.
+                </p>
+            </li>
+
+            <li>
+                <h3>Eventos y Recursos</h3>
+                <p>
+                    Al final de cada turno, el jugador toma una <strong>Carta de Evento</strong>, que puede activar situaciones imprevistas como tormentas, derrumbes o encuentros con animales. Además, los jugadores pueden recoger recursos como frutas o agua para mantenerse saludables durante el juego.
+                </p>
+            </li>
+
+            <li>
+                <h3>Objetivo Final</h3>
+                <p>
+                    El primer jugador que encuentre el <strong>Tesoro</strong> (ubicado en un hexágono oculto en la isla) y regrese al punto de inicio gana el juego. Los demás jugadores pueden intentar bloquear su regreso utilizando criaturas o emboscadas, aprovechando el sistema de combate basado en trigonometría y las herramientas disponibles.
+                </p>
+            </li>
+        </ol>
+
+        <h2>Final del Juego</h2>
+        <p>
+            El primer jugador en encontrar el tesoro y regresar al punto de inicio será el <strong>ganador</strong>. Los otros jugadores pueden intentar impedir su regreso usando criaturas o emboscadas. ¡El jugador que logre completar su misión será el explorador más astuto de la isla!
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Exploradores de la Isla Misteriosa. Todos los derechos reservados.</p>
+    </footer>
+</
+
+  
+  
